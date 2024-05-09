@@ -1,0 +1,61 @@
+body {
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+    background-color: #f0f8ff; /* Light azure background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    color: #ff69b4; /* Hot pink color for the title */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #baa2aa; /* Lavender blush background for cells */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    border-radius: 15px; /* Rounded corners for cells */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.cell:hover {
+    background-color: #fafad2; /* Light golden rod yellow background on hover */
+}
+
+button {
+    background-color: #d22e47; /* Light pink button background */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px #999; /* Add shadow for better button depth */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for button effects */
+}
+
+button:hover {
+    background-color: #ff69b4; /* Hot pink background on hover */
+    box-shadow: 0 2px #666; /* Lower shadow on hover */
+}
+
+button:active {
+    background-color: #ff1493; /* Deep pink background when pressed */
+    box-shadow: 0 1px #666; /* Even lower shadow when pressed */
+    transform: translateY(2px); /* Slightly shift button down when pressed */
+}
